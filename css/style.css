@@ -187,6 +187,10 @@ img {
   border: none;
 }
 
+.hamburger:focus {
+  outline: none;
+}
+
 .hamburger .line {
   width: 25px;
   height: 3px;
@@ -215,10 +219,6 @@ img {
   height: 2px;
   border: 1px solid #ccc;
   width: 100%;
-}
-
-#header-content {
-  border: 1px solid black;
 }
 
 #header-text {
