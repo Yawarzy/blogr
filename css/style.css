@@ -231,7 +231,8 @@ img {
 }
 
 .divider {
-  border: 1px solid #ccc;
+  background-color: #ccc;
+  height: 1px;
   border-radius: 0.5em;
   width: 100%;
 }
@@ -288,6 +289,7 @@ img {
   border-radius: 2em;
   cursor: pointer;
   font-family: "Overpass", sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
   -webkit-transition: -webkit-transform 200ms ease;
