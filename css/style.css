@@ -91,11 +91,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  max-width: 324px;
-  margin: 0 auto;
   min-height: 100vh;
-  -webkit-box-shadow: 0 0 5px #ccc;
-          box-shadow: 0 0 5px #ccc;
 }
 
 ul,
@@ -349,4 +345,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    display: none;
+  }
 }
