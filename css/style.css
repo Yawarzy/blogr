@@ -5,8 +5,6 @@
           box-sizing: border-box;
 }
 
-/* ==== For Fluid Typography ==== */
-/*======================*/
 html {
   font-size: 100%;
   overflow-x: hidden;
@@ -62,9 +60,9 @@ img {
   top: 7em;
   left: 7.5%;
   right: 7.5%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   border-radius: 0.45em;
   -webkit-box-shadow: 0 8px 16px -5px #ccc;
           box-shadow: 0 8px 16px -5px #ccc;
@@ -129,18 +127,11 @@ img {
   opacity: 1;
 }
 
-.nav-wrap .nav-item .dropdown-nav.dropdown-active {
-  padding: 1em 2.5em;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  overflow: visible;
-}
-
 .nav-wrap .nav-link {
   color: #22222a;
   font-family: "Overpass", sans-serif;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .nav-wrap .nav-link:focus {
@@ -149,6 +140,30 @@ img {
 
 .nav-wrap .nav-link:hover {
   text-decoration: underline;
+}
+
+.nav-wrap .nav-link .fas {
+  color: #ff525d;
+}
+
+.nav-wrap .nav-link:focus + ul {
+  padding: 1em 2.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: visible;
+}
+
+.nav-wrap .nav-link i {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.nav-wrap .nav-link:focus > i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .nav-wrap #nav-btns {
@@ -216,8 +231,8 @@ img {
 }
 
 .divider {
-  height: 2px;
   border: 1px solid #ccc;
+  border-radius: 0.5em;
   width: 100%;
 }
 
@@ -237,14 +252,20 @@ img {
 }
 
 #header-btns {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-top: 8vw;
 }
 
 #header-btns a.btn {
   margin-bottom: 0;
   font-weight: 400;
+}
+
+#header-btns a.btn:first-child {
+  margin-right: 0.5em;
+}
+
+#header-btns a.btn:last-child {
+  margin-left: 0.5em;
 }
 
 .container {
