@@ -91,7 +91,11 @@ body {
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 324px;
+  margin: 0 auto;
   min-height: 100vh;
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
 }
 
 ul,
@@ -111,12 +115,12 @@ img {
 #header {
   background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff4258));
   background: linear-gradient(to right, #ff8f70, #ff4258);
-  padding: 2rem 0;
+  padding: 2em 0;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  height: 90vh;
+  height: 85vh;
   border-bottom-left-radius: 5rem;
 }
 
@@ -132,11 +136,11 @@ img {
 
 .nav-wrap {
   position: absolute;
-  top: 7rem;
+  top: 7em;
   left: 7.5%;
   right: 7.5%;
   height: 85%;
-  border-radius: 0.45rem;
+  border-radius: 0.45em;
   -webkit-box-shadow: 0 8px 16px -5px #ccc;
           box-shadow: 0 8px 16px -5px #ccc;
   background-color: white;
@@ -147,7 +151,7 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 2rem;
+  padding: 2em;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   opacity: 0;
@@ -168,17 +172,17 @@ img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .nav-wrap .nav-item {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75em;
 }
 
 .nav-wrap .nav-item .dropdown-nav {
-  border-radius: 0.25rem;
+  border-radius: 0.25em;
   background-color: #eee;
   height: 0px;
   overflow: hidden;
@@ -187,7 +191,7 @@ img {
 }
 
 .nav-wrap .nav-item .dropdown-nav li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25em;
 }
 
 .nav-wrap .nav-item .dropdown-nav li a {
@@ -201,8 +205,7 @@ img {
 }
 
 .nav-wrap .nav-item .dropdown-nav.dropdown-active {
-  padding: 1rem 2.5rem;
-  padding: 1rem 2.5rem;
+  padding: 1em 2.5em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -229,13 +232,13 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 1rem;
+  padding: 1em;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .nav-wrap #nav-btns a {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75em;
 }
 
 .nav-wrap #nav-btns a.btn {
@@ -253,7 +256,7 @@ img {
 }
 
 .hamburger {
-  padding: 0.5rem;
+  padding: 0.5em;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -263,8 +266,8 @@ img {
   width: 25px;
   height: 3px;
   background-color: white;
-  margin-bottom: 0.3rem;
-  border-radius: 10rem;
+  margin-bottom: 0.3em;
+  border-radius: 10em;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
@@ -305,8 +308,8 @@ img {
 .btn {
   display: inline-block;
   border: 1px solid transparent;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
+  padding: 0.5em 1em;
+  border-radius: 2em;
   cursor: pointer;
   font-weight: 400;
   font-family: inherit;
@@ -345,10 +348,4 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media screen and (min-width: 426px) {
-  body {
-    display: none;
-  }
 }
