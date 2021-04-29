@@ -39,9 +39,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: 35em;
   border-bottom-left-radius: 5em;
 }
 
@@ -238,10 +236,11 @@ img {
 }
 
 #header-text {
-  margin-top: 20vw;
+  padding-top: 7em;
 }
 
 #header-text h1 {
+  font-size: 5vmax;
   color: white;
 }
 
@@ -250,10 +249,11 @@ img {
   letter-spacing: 1px;
   color: white;
   padding: 0.5em;
+  text-align: center;
 }
 
 #header-btns {
-  margin-top: 8vw;
+  margin-top: 2em;
 }
 
 #header-btns a.btn {
@@ -298,7 +298,7 @@ img {
   transition: transform 200ms ease, -webkit-transform 200ms ease;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover, .btn:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
