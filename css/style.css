@@ -32,9 +32,9 @@ img {
 }
 
 #header {
-  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff4258));
-  background: linear-gradient(to right, #ff8f70, #ff4258);
-  padding: 2em 0 5em 0;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff4258)), url("../images/bg-pattern-intro.svg") no-repeat center center/cover;
+  background: linear-gradient(to right, #ff8f70, #ff4258), url("../images/bg-pattern-intro.svg") no-repeat center center/cover;
+  padding: 2em 0;
   position: relative;
   top: 0;
   left: 0;
@@ -235,12 +235,16 @@ img {
   width: 100%;
 }
 
+#header-content {
+  padding: 5em 0 4em 0;
+}
+
 #header-text {
-  padding-top: 7em;
+  margin-bottom: 2em;
 }
 
 #header-text h1 {
-  font-size: 5vmax;
+  font-size: 4.5vmax;
   color: white;
 }
 
@@ -250,10 +254,6 @@ img {
   color: white;
   padding: 0.5em;
   text-align: center;
-}
-
-#header-btns {
-  margin-top: 2em;
 }
 
 #header-btns a.btn {
@@ -292,13 +292,16 @@ img {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
-  -webkit-transition: -webkit-transform 200ms ease;
-  transition: -webkit-transform 200ms ease;
-  transition: transform 200ms ease;
-  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
-.btn:hover, .btn:active {
+.btn:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.btn:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
