@@ -337,7 +337,7 @@ img {
 }
 
 #app-section {
-  border: 1px solid purple;
+  margin: 2em 0;
   background-color: #22222a;
   color: white;
   padding: 2em 0;
