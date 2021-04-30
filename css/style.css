@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -268,6 +283,56 @@ img {
 
 #header-btns a.btn:last-child {
   margin-left: 0.5em;
+}
+
+.features {
+  padding: 3em 0;
+}
+
+.features h2 {
+  color: #1f3f5b;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 1em;
+}
+
+.feature-img {
+  margin-bottom: 2em;
+}
+
+.features-container {
+  padding: 1em 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.feature-box {
+  line-height: 1.7;
+  margin-bottom: 2em;
+  padding: 1em 0;
+}
+
+.feature-box:last-child {
+  margin-bottom: 0;
+}
+
+.feature-box h3 {
+  color: #1f3f5b;
+  font-size: 1.4rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.feature-box p {
+  max-width: 50ch;
+  margin-top: 1em;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #22222a;
+  text-align: center;
 }
 
 .container {
