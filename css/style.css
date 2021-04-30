@@ -296,11 +296,6 @@ img {
   transition: all 200ms ease;
 }
 
-.btn:hover {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
-}
-
 .btn:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
