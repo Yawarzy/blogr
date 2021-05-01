@@ -8,19 +8,3 @@ const navToggle = () => {
 };
 
 const handleHam = hamburger.addEventListener("click", navToggle);
-
-// function removeActiveClasses() {
-//   navLinks.forEach((navLink) => {
-//     const dropdown = navLink.nextElementSibling;
-
-//     dropdown.classList.remove("dropdown-active");
-//   });
-// }
-
-// navLinks.forEach((navLink) => {
-//   navLink.addEventListener("click", () => {
-//     removeActiveClasses();
-
-//     navLink.nextElementSibling.classList.add("dropdown-active");
-//   });
-// });
