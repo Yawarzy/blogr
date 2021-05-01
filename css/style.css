@@ -211,7 +211,6 @@ img {
 }
 
 .hamburger {
-  padding: 0.5em;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -222,18 +221,27 @@ img {
 }
 
 .hamburger .line {
-  width: 25px;
+  width: 35px;
   height: 3px;
   background-color: white;
-  margin-bottom: 0.3em;
+  margin-bottom: 6px;
   border-radius: 10em;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
+.hamburger .line:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger #line2 {
+  max-width: 25px;
+  margin-left: auto;
+}
+
 .hamburger.close #line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-          transform: rotate(-45deg) translate(-5px, 5px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .hamburger.close #line2 {
@@ -241,8 +249,8 @@ img {
 }
 
 .hamburger.close #line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-          transform: rotate(45deg) translate(-5px, -5px);
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .divider {
@@ -332,22 +340,19 @@ img {
   margin-top: 1em;
   font-size: 1rem;
   font-weight: 300;
-  color: #888;
+  color: #4b5862;
   text-align: center;
 }
 
 #app-section {
-  margin: 2em 0;
-  background-color: #22222a;
+  margin: 3em 0 2em 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164)), url("../images/bg-pattern-circles.svg") no-repeat center 500%/auto 109%;
+  background: linear-gradient(#2c2d3f, #3f4164), url("../images/bg-pattern-circles.svg") no-repeat center 500%/auto 109%;
+  background-blend-mode: hue;
   color: white;
   padding: 2em 0;
   border-bottom-left-radius: 5em;
   border-top-right-radius: 5em;
-  background-image: url("../images/bg-pattern-circles.svg");
-  background-repeat: no-repeat;
-  background-size: auto 109%;
-  background-position: center 500%;
-  background-blend-mode: normal;
 }
 
 #app-img {
@@ -369,16 +374,68 @@ img {
 }
 
 #app-content h2 {
-  font-size: 4.5vmax;
+  font-size: 4vmax;
+  color: white;
 }
 
 #app-content p {
   max-width: 50ch;
   margin: 0 auto;
   letter-spacing: 0.5px;
-  line-height: 1.7;
+  line-height: 2;
   margin-top: 1em;
+  color: #c8c8cb;
+}
+
+#footer {
+  background: #22222a;
+  border-top-right-radius: 5em;
+  padding: 3em 0;
+  text-align: center;
+  height: 40em;
+}
+
+#footer .container {
+  height: 100%;
+}
+
+#footer .logo {
+  cursor: pointer;
+}
+
+#footer .grid {
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 100%;
+}
+
+#footer .grid-item .nav-link {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+#footer .grid-item .nav-link:hover, #footer .grid-item .nav-link:active {
+  text-decoration: underline;
+}
+
+#footer .grid-item .nav-item {
   color: #ccc;
+  letter-spacing: 1px;
+}
+
+#footer .grid-item .nav-item:hover, #footer .grid-item .nav-item:active {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer p {
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 
 .container {
@@ -447,6 +504,17 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 500px) {
